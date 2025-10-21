@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>📦 Painel WhatsApp</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>📦 Painel WhatsApp</h1>
+</header>
+<main>
+    <div class="card qr-card" id="qrContainer">
+        <p>Escaneie o QR Code:</p>
+        <img id="qrImg" src="" alt="QR Code">
+    </div>
+
+    <div class="card">
+        <label>Mensagem / Link:</label>
+        <textarea id="mensagem" rows="4" placeholder="Digite sua mensagem"></textarea>
+    </div>
+
+    <div class="card">
+        <label>Selecione os grupos:</label>
+        <div class="tags" id="tagsContainer"></div>
+        <select id="grupoSelect" multiple size="6"></select>
+        <div class="btn-group">
+            <button class="enviar" id="enviarBtn">Enviar</button>
+            <button class="atualizar" id="atualizarGruposBtn">🔄 Atualizar Grupos</button>
+        </div>
+        <p>Total enviado: <span id="totalEnviado">0</span></p>
+        <div class="status" id="status"></div>
+    </div>
+
+    <div class="card history">
+        <h3>📜 Últimos envios</h3>
+        <div id="historyItems"></div>
+    </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

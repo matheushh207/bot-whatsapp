@@ -1,0 +1,16 @@
+
+body { font-family: 'Segoe UI', sans-serif; background: #f0f2f5; margin:0; }
+header { background: #128C7E; color: #fff; padding: 15px 30px; text-align:center; }
+main { max-width: 900px; margin: auto; padding: 20px; }
+.card { background:#fff; padding:20px; border-radius:10px; box-shadow:0 3px 8px rgba(0,0,0,0.15); margin-bottom:20px; }
+textarea, select { width:100%; padding:10px; border-radius:5px; border:1px solid #ccc; margin-top:5px; }
+button { padding:10px 20px; margin:5px; cursor:pointer; border:none; border-radius:5px; font-weight:bold; }
+button.enviar { background-color:#25D366; color:#fff; }
+button.atualizar { background-color:#34B7F1; color:#fff; }
+.tags { display:flex; flex-wrap:wrap; margin:5px 0; }
+.tag { background:#25D366; color:#fff; padding:5px 10px; border-radius:15px; margin:2px; display:flex; align-items:center; }
+.tag span { margin-left:5px; cursor:pointer; font-weight:bold; }
+.qr-card img { width:200px; height:200px; display:block; margin:auto; }
+.history { max-height:200px; overflow-y:auto; }
+.history-item { border-bottom:1px solid #eee; padding:5px 0; }
+.history-item:last-child { border-bottom:none; }
